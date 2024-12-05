@@ -1,19 +1,27 @@
+---
+// Supports weights 100-900
+import '@fontsource-variable/asap';
+---
+
 <!doctype html>
-<html lang="en">
+<html lang="pl">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/lexisLogo.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Biuro Lexis</title>
 	</head>
 	<body>
 		<slot />
 	</body>
 </html>
 
-<style>
-	html,
+<style is:global>
+	html {
+		font-family: 'Asap Variable', system-ui, sans-serif;
+		background: #ddd;
+	},
 	body {
 		margin: 0;
 		width: 100%;
