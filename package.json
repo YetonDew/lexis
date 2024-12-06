@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "eslint": "eslint src/**/*.{js,astro}"
   },
   "dependencies": {
     "@astrojs/react": "^4.0.0",
