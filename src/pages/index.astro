@@ -1,5 +1,5 @@
 ---
-import LexisLogo from '../icons/LexisLogo.astro';
+import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
 import { Landing } from '../components/Landing.jsx';
 
@@ -7,26 +7,8 @@ import { Landing } from '../components/Landing.jsx';
 
 <Layout title="Biuro Lexis">
   <main>
-    <header class="py-3 px-10 flex items-center fixed top-0 w-full justify-between">
-      <div class="flex flex-grow basis-0 items-center">
-        <LexisLogo />			
-      </div>
 
-      <nav>
-        <ul class="flex [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
-          <li><a href="#">o nas</a></li>
-          <li><a href="#">oferta</a></li>
-          <li><a href="#">zasoby</a></li>
-          <li><a href="#">kontakt</a></li>
-        </ul>
-      </nav>
-
-      <div class="flex flex-grow basis-0 justify-end items-center px-4 py-2">
-        <a class="inline-block px-2" href="mailto:biurolexis@gmail.com">biurolexis@gmail.com</a>
-      </div>
-    </header>
-
+	<Header />
     <Landing client:only/>
-
   </main>
 </Layout>

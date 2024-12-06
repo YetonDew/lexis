@@ -3,7 +3,7 @@ import TexExample from '../components/TexExample.jsx';
 
 export function Landing() {
     return (
-        <Parallax pages={2} style={{ top: '0', left: '0' }} className="h-full display-block position-relative z-10">
+        <Parallax pages={2} style={{ top: '0', left: '0' }} className="h-full w-full display-block position-relative z-30">
         <ParallaxLayer offset={0} speed={1}>
             <div className="bg-center bg-repeat-x w-full h-screen position-absolute " 
             style={{
@@ -14,11 +14,11 @@ export function Landing() {
             </div>
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={0.9}>
-            <div className='w-full h-screen position-absolute z-30 mt-52'>
-                <h1 className="text-[150px] font-bold text-center text-white">NEED HELP?</h1>
+            <div className='w-full h-screen position-absolute mt-52'>
+                <h1 className="text-8xl font-bold text-center text-white uppercase">Toniesz <br/>w rachunkach?</h1>
             </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.9}>
+        <ParallaxLayer offset={0} speed={1}>
             <div className="bg-repeat-x w-full h-screen position-absolute"
                 style={{
                     backgroundImage: 'url(./img-landing/hand.png)',
@@ -45,7 +45,7 @@ export function Landing() {
                 }}>
             </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={0.5}>
+        <ParallaxLayer offset={0.9999} speed={0.5}>
             <TexExample/>
         </ParallaxLayer>
     </Parallax>
