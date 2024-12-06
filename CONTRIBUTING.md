@@ -1,12 +1,12 @@
 # CONTRIBUTING.md
 
 ## Welcome to 'Lexis' 📃  
-We’re thrilled that you’re interested in contributing to our project! This document will guide you through the steps to contribute your valuable work to *La velada del año 4*, a project developed with Astro. We want to make the process simple and transparent, so here’s a step-by-step guide.
+We’re thrilled that you’re interested in contributing to our project! This document will guide you through the steps to contribute your valuable work to *Lexis*, a project developed with Astro. We want to make the process simple and transparent, so here’s a step-by-step guide.
 
 ## Getting Started 🚀
 
 1. **Familiarize yourself with Astro JS**: If you’re not already familiar with Astro JS, make sure to understand how it works. You can find plenty of useful information in the [official Astro documentation](https://docs.astro.build/).
-2. **Set up your development environment**: We recommend using `pnpm` as the package manager for its efficiency and speed. If you don’t have `pnpm` installed, you can install it by running `npm install -g pnpm`.
+2. **Set up your development environment**: We recommend using `npm` as the package manager for its efficiency and speed. If you don’t have `npm` installed.
 
 ---
 
@@ -18,7 +18,7 @@ We’re thrilled that you’re interested in contributing to our project! This d
 2. **Clone your fork**: After forking, clone the repository to your local machine. Copy the URL of your fork by clicking the green "Code" button, then run `git clone <URL-of-your-fork>` in your terminal.
 3. **Add the original repository as a remote**: To keep your fork updated with the original repository changes, add the original repository as a remote. Run `git remote add upstream <original-repository-URL>`.
 4. **Use the correct Node.js version**: Use `nvm use` or `nvm use <version>` to ensure you’re using the correct Node.js version. If you’re not using `nvm`, download the version specified in `.node-version` or `.nvmrc`.
-5. **Install dependencies**: Navigate to the cloned project directory and run `pnpm install` to install all necessary dependencies.
+5. **Install dependencies**: Navigate to the cloned project directory and run `npm install` to install all necessary dependencies.
 
 ---
 
@@ -27,7 +27,7 @@ We’re thrilled that you’re interested in contributing to our project! This d
 1. **Sync your fork**: You can sync your fork from `github.com/your-user/your-repo` by clicking *Sync fork*. Alternatively, you can use the terminal with `gh repo sync -b main` or `git switch main && git fetch upstream && git merge upstream/main`. More information is available in the [GitHub documentation](https://docs.github.com/).
 2. **Create a new branch**: Before making changes, create a new branch using `git switch -c <your-branch-name>`.
 3. **Develop your changes**: Implement your changes or improvements in your local branch. Make sure to follow the project’s coding practices and standards.
-4. **Test your changes**: Run `pnpm run dev` to start the Astro development server and test your changes in the browser.
+4. **Test your changes**: Run `npm run dev` to start the Astro development server and test your changes in the browser.
 
 ---
 
