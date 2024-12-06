@@ -1,6 +1,6 @@
 # CONTRIBUTING.md
 
-Welcome to 'Lexis' 📃  
+## Welcome to 'Lexis' 📃  
 We’re thrilled that you’re interested in contributing to our project! This document will guide you through the steps to contribute your valuable work to *La velada del año 4*, a project developed with Astro. We want to make the process simple and transparent, so here’s a step-by-step guide.
 
 ## Getting Started 🚀
