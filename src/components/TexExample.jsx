@@ -43,6 +43,4 @@ function TexExample() {
 
     );
 }
-
-
 export default TexExample;

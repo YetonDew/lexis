@@ -1,14 +1,15 @@
 ---
 import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
-import { Landing } from '../components/Landing.jsx';
-
+import TexExample from '../components/TexExample';
+import Landing from '../components/Landing.jsx';
 ---
 
 <Layout title="Biuro Lexis">
   <main>
-
-	<Header />
-    <Landing client:only="react"/>
+	  <Header /> 
+    <Landing client:load/>
+    <TexExample />
+    
   </main>
 </Layout>
