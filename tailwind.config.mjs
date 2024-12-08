@@ -4,5 +4,14 @@ export default {
 	theme: {
 		extend: {},
 	},
-	plugins: [],
+	colors: {
+		'primary' : '#32494C',
+		'primary-light': '#B3C5C7',
+		'primary-dark': '#172224',
+		'secondary': '#EDEFE2',
+	},
+	fontFamily: {
+		Asap: ['Asap Variable', 'sans-serif'],
+	},
+	plugins: []
 }
