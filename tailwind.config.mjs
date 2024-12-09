@@ -7,7 +7,7 @@ export default {
 				'primary' : '#32494C',
 				'primaryLight': '#B3C5C7',
 				'primaryDark': '#172224',
-				'secondary': '#EDEFE2',
+				'secondary': '#f6f9ea',
 			},
 			fontFamily: {
 				Asap: ['Asap Variable', 'sans-serif'],
