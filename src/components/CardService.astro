@@ -6,7 +6,7 @@ const { title, description } = model.data;
 ---
 
 
-<article class="rounded-lg border border-gray-100 bg-blue p-4 m-4 shadow-sm transition hover:shadow-lg sm:p-6">
+<article class="rounded-lg bg-blue p-4 m-4 transition hover:shadow-md sm:p-6 bg-white">
     <span class="inline-block rounded bg-blue-600 p-2 text-white">
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -28,8 +28,8 @@ const { title, description } = model.data;
         </svg>
     </span>
 
-    <a href="#">
-        <h3 class="mt-0.5 text-lg font-medium text-gray-900">
+    <a href={`/service/${slug}`}>
+        <h3 class="mt-0.5 text-lg font-medium line-clamp-1 text-gray-900">
             {title}
         </h3>
     </a>

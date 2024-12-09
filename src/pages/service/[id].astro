@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
+import Wrapper from "../../components/Wrapper.astro";
 
 export async function getStaticPaths() {
     const services = await getCollection("services");
@@ -18,5 +19,8 @@ const { title, description } = data;
 ---
 
 <Layout title={title}>
-    <h1>{title}</h1>
+    <Wrapper>
+        <h1>{title}</h1>
+    </Wrapper>
+    
 </Layout>
