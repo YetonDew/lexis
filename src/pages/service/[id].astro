@@ -2,11 +2,14 @@
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import Wrapper from "../../components/Wrapper.astro";
+import Mail from "../../icons/Mail.astro";
+import Phone from "../../icons/Phone.astro";
+import Map from "../../icons/Map.astro";
 
 export async function getStaticPaths() {
     const services = await getCollection("services");
     return services.map((service) => ({
-        params: { id: service.slug },
+        params: { id: service?.slug },
         props: { service },
     }));
 }
@@ -15,12 +18,40 @@ const { service } = Astro.props;
 const { data } = service
 const { title, description } = data;
 
+const { Content } = await service.render();
+
 
 ---
 
 <Layout title={title}>
     <Wrapper>
-        <h1>{title}</h1>
+        <section class="w-full h-auto pt-10">
+            <h1 class="text-6xl mx-20 mt-10 font-medium text-primaryDark">{title}</h1>
+            <div class="flex justify-between py-4 mt-10 mx-20">
+                <div class="flex gap-4">
+                    <div class="w-12 h-12 rounded-full overflow-hidden">
+                        <img src="../src/assets/avatar.webp" alt="">
+                    </div>
+                    <div class="flex flex-col text-sm ">
+                        <p class="font-bold text-primaryDark">Marta Tagowska</p>
+                        <p class="text-primaryLight">Właściciel</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 justify-center items-center">
+                    <Mail/>
+                    <Phone/>
+                    <Map/>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <img src={data.image} alt="" class="w-full h-auto">
+            </div>
+            <div class="my-20 mx-20 lg:prose-xl">
+                <p class="text-gray-600">
+                    <Content />
+                </p>
+            </div>
+        </section>
     </Wrapper>
     
 </Layout>

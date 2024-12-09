@@ -4,7 +4,7 @@ import { getCollection } from "astro:content";
 
 const services = await getCollection("services");
 ---
-<div class="w-full bg-[">
+<section class="w-full bg-[">
     <div class="mx-4 flex flex-wrap justify-center p-8">
         {services.map(service => (
             <div class="w-full px-4 md:w-1/2 lg:w-1/2">
@@ -12,4 +12,4 @@ const services = await getCollection("services");
             </div>
         ))}
     </div>
-</div>
+</section>
