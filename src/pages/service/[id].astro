@@ -26,7 +26,9 @@ const { Content } = await service.render();
 <Layout title={title}>
     <Wrapper>
         <section class="w-full h-auto pt-10">
-            <h1 class="text-6xl mx-20 mt-10 font-medium text-primaryDark">{title}</h1>
+            <h1 class="text-6xl mx-20 mt-10 font-medium text-primaryDark"
+            transition:name={`service-title-${service.slug}`}
+            >{title}</h1>
             <div class="flex justify-between py-4 mt-10 mx-20">
                 <div class="flex gap-4">
                     <div class="w-12 h-12 rounded-full overflow-hidden">

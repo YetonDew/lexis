@@ -29,7 +29,9 @@ const { title, description } = model.data;
     </span>
 
     <a href={`/service/${slug}`}>
-        <h3 class="mt-0.5 text-lg font-medium line-clamp-1 text-gray-900">
+        <h3 class="mt-0.5 text-lg font-medium line-clamp-1 text-gray-900"
+            transition:name={`service-title-${slug}`}
+        >
             {title}
         </h3>
     </a>

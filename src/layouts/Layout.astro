@@ -1,6 +1,7 @@
 ---
 // Supports weights 100-900
 import "@fontsource-variable/asap";
+import { ClientRouter } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -11,6 +12,7 @@ import "@fontsource-variable/asap";
 		<link rel="icon" type="image/svg+xml" href="/lexisLogo.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Biuro Lexis</title>
+		<ClientRouter />
 	</head>
 	<body>
 		<slot />
