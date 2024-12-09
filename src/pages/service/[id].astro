@@ -1,0 +1,22 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+    const services = await getCollection("services");
+    return services.map((service) => ({
+        params: { id: service.slug },
+        props: { service },
+    }));
+}
+
+const { service } = Astro.props;
+const { data } = service
+const { title, description } = data;
+
+
+---
+
+<Layout title={title}>
+    <h1>{title}</h1>
+</Layout>
