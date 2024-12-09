@@ -1,6 +1,8 @@
 
 ---
-const { title, description, image } = Astro.props;
+const model = Astro.props;
+const slug = model.slug;
+const { title, description } = model.data;
 ---
 
 
@@ -37,7 +39,7 @@ const { title, description, image } = Astro.props;
     </p>
 
     <a
-        href="#"
+        href={`/service/${slug}`}
         class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600"
     >
         czytaj więcej
