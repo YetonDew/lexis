@@ -2,21 +2,14 @@
 import Mail from "../icons/Mail.astro";
 import Phone from "../icons/Phone.astro";
 import Map from "../icons/Map.astro";
+import Maps from "../components/Map.jsx";
 ---
 
 <section class="w-full bg-[#FAFAFA]" id="kontakt">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 items-center">
-
+    
         <div class="w-full h-full">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.971652485652!2d19.112336740735152!3d50.81410774814679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4710b5d13bc92935%3A0xdd1cba62f01b2d7f!2sJasnogórska%2023%2F25%2F2%2C%2042-200%20Częstochowa!5e0!3m2!1ses-419!2spl!4v1733738559612!5m2!1ses-419!2spl"
-                width="100%"
-                height="100%"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            <Maps client:only lat={50.81527837448133} lng={19.11534911268465}/>
         </div>
 
         <div class="flex flex-col items-center justify-center">
