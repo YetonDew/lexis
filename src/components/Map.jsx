@@ -20,5 +20,5 @@ export default function MapComponent(props) {
             .addTo(_ref.current);
     }
   }, []);
-  return <div id="map" style={{ height: "300px" }}></div>;
+  return <div className="h-[300px] z-20" id="map"></div>;
 }
