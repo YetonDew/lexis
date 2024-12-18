@@ -4,6 +4,7 @@ const serveces = defineCollection({
     schema: z.object({
         title: z.string(),
         description: z.string(),
+        graphic: z.string(),
     }),
 });
 

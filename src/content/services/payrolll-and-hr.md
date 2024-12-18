@@ -1,6 +1,7 @@
 ---
 title: Kadry i Płace
 description: Przygotowujemy umowy o pracę, zlecenia i o dzieło, naliczamy wynagrodzenia, sporządzamy listy płac, rozliczamy z ZUS (wraz z przesyłaniem dokumentów elektronicznie) oraz pomagamy w prowadzeniu akt osobowych pracowników.
+graphic: it.svg
 ---
 
 Why do we use it?
