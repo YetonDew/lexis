@@ -6,9 +6,9 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				'primary' : '#32494C',
-				'primaryLight': '#B3C5C7',
-				'primaryDark': '#172224',
+				'primary' : '#071C82',
+				'primaryLight': '#315BAF',
+				'primaryDark': '#041056',
 				'secondary': '#f6f9ea',
 			},
 			fontFamily: {
