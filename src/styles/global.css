@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .trapezoid-after::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 0;
+    border-bottom: 100px solid #FFF;
+    border-left: 0px solid transparent;
+    border-right: 100px solid transparent;
+    z-index: -1;
+  }
+}

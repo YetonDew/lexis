@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-export default function Landing() {
+export default function LandingParallax() {
   useEffect(() => {
     const bg = document.getElementById("bg");
     const text = document.getElementById("text");

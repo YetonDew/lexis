@@ -1,13 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Landing from "../components/LandingParallax.jsx";
+import Landing from "../components/Landing.astro";
 import Services from "../sections/Services.astro";
 import Contact from "../sections/Contact.astro";
 import Wrapper from "../components/Wrapper.astro";
 ---
 
 <Layout title="Biuro Lexis">
-  <Landing client:load />
+  <Landing />
   <Wrapper>
     <Services />
     <Contact />
