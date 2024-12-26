@@ -3,13 +3,14 @@ import Layout from "../layouts/Layout.astro";
 import Landing from "../components/Landing.astro";
 import Services from "../sections/Services.astro";
 import Contact from "../sections/Contact.astro";
-import Wrapper from "../components/Wrapper.astro";
+import NavHeader from "../components/NavHeader.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Biuro Lexis">
-  <Landing />
-  <Wrapper>
+  <NavHeader />
+    <Landing />
     <Services />
     <Contact />
-  </Wrapper>
+  <Footer />
 </Layout>
