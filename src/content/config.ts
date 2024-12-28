@@ -4,7 +4,8 @@ const serveces = defineCollection({
     schema: z.object({
         title: z.string(),
         description: z.string(),
-        graphic: z.string(),
+        slug: z.string(),
+        graphic: z.enum(["Accounting", "Business", "Payroll", "Remote"]),
     }),
 });
 
