@@ -9,6 +9,7 @@ export default {
 				'primary' : '#071C82',
 				'primaryLight': '#315BAF',
 				'primaryDark': '#041056',
+				'primaryDoubleDark' : '#020838',
 				'secondary': '#f6f9ea',
 			},
 			fontFamily: {
