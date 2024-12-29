@@ -15,7 +15,7 @@ export default function MapComponent(props) {
             _ref.current
           );
           L.marker([props.lat, props.lng])
-            .bindPopup("Lexis office")
+            .bindPopup("Biuro Lexis")
             .openPopup()
             .addTo(_ref.current);
     }
