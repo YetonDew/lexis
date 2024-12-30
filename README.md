@@ -1,6 +1,6 @@
 # LEXIS 
 
-Welcome to Lexis, a modern and user-friendly website designed for accounting services. This repository contains the source code for the Lexis project, developed using modern web technologies as Astro.build. 🚀
+Welcome to Lexis, a modern and user-friendly website designed for accounting firm. This repository contains the source code for the Lexis project, developed using modern web technologies as Astro.build. 🚀
 
 
 ## Installation
