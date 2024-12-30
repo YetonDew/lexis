@@ -37,5 +37,5 @@ export default function MapComponent(props) {
     }
   }, [props.lat, props.lng]); // add props.lat and props.lng as dependencies
 
-  return <div className="h-[300px] z-20" id="map"></div>;
+  return <div className="h-full z-20" id="map"></div>;
 }

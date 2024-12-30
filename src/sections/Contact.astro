@@ -6,44 +6,42 @@ import Maps from "../components/Map.jsx";
 ---
 
 <section class="w-full bg-[#FAFAFA] mx-auto space-y-8 px-7 py-16 sm:px-6 lg:space-y-16 lg:px-20 " id="kontakt">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 items-center">
-    
-        <div class="w-full h-full">
-            <Maps client:only="react" lat={50.81527837448133} lng={19.11534911268465}/>
-        </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 items-center justify-center">
 
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-start">
+            <h1 class="text-3xl mb-6 ml-4 font-medium text-primaryDark">kontakt</h1>
+            <!-- <p class="text-gray-500 text-sm ml-4">Skontaktuj się z nami - Czekamy na Twoje pytania i chętnie <br> pomożemy w każdej sprawie księgowej!</p> -->
             <ul class="list-none w-full max-w-md">
-                <li class="flex items-center my-4">
+                <li class="flex items-center my-2">
                     <a href="mailto:biurolexis@gmail.com"
-                        class="group flex items-center text-primaryDark w-full p-4 hover:shadow-md hover:bg-white transition-all rounded-lg"
+                        class="group flex items-center text-primaryDark w-full p-2 transition-all "
                     >
                         <span
-                            class="inline-block roundeD p-2 text-primary group-hover:transform group-hover:scale-110 transition-transform"
+                            class="inline-block roundeD p-2 text-blue-500 group-hover:transform group-hover:scale-110 transition-transform"
                         >
                             <Mail class="mr-2" />
                         </span>
                         <span class="ml-2">biurolexis@gmail.com</span>
                     </a>
                 </li>
-                <li class="flex items-center my-4">
+                <li class="flex items-center my-2">
                     <a href="tel:501 332 339"
-                        class="group flex items-center text-primaryDark w-full p-4 hover:shadow-md hover:bg-white transition-all rounded-lg"
+                        class="group flex items-center text-primaryDark w-full p-2 transition-all "
                     >
                         <span
-                            class="inline-block rounded p-2 text-primary group-hover:transform group-hover:scale-110 transition-transform"
+                            class="inline-block rounded p-2 text-blue-500 group-hover:transform group-hover:scale-110 transition-transform"
                         >
                             <Phone class="mr-2" />
                         </span>
                         <span class="ml-2">tel. 501 332 339</span>
                     </a>
                 </li>
-                <li class="flex items-center my-4">
+                <li class="flex items-center my-2">
                     <a href="https://www.google.com/maps/dir//Jasnog%C3%B3rska+23%2F25+42-200+Cz%C4%99stochowa/@50.8152613,19.1153546,15z/data=!4m5!4m4!1m0!1m2!1m1!1s0x4710b5d13bc92935:0x2ec5d7babb62298d" target="_blank"
-                        class="group flex items-center text-primaryDark w-full p-4 hover:shadow-md hover:bg-white transition-all rounded-lg"
+                        class="group flex items-center text-primaryDark w-full p-2 transition-all "
                     >
                         <span
-                            class="inline-block rounded p-2 text-primary group-hover:transform group-hover:scale-110 transition-transform"
+                            class="inline-block rounded p-2 text-blue-500 group-hover:transform group-hover:scale-110 transition-transform"
                         >
                             <Map class="mr-2" />
                         </span>
@@ -53,6 +51,10 @@ import Maps from "../components/Map.jsx";
                     </a>
                 </li>
             </ul>
+        </div>
+    
+        <div class="w-full h-full">
+            <Maps client:only="react" lat={50.81527837448133} lng={19.11534911268465}/>
         </div>
     </div>
 </section>
