@@ -6,6 +6,7 @@ const serveces = defineCollection({
         description: z.string(),
         slug: z.string(),
         graphic: z.enum(["Accounting", "Business", "Payroll", "Remote"]),
+        order: z.number(),
     }),
 });
 

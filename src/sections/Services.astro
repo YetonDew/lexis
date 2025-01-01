@@ -2,7 +2,7 @@
 import CardService from "../components/CardService.astro";
 import { getCollection } from "astro:content";
 
-const services = await getCollection("services");
+const services = (await getCollection("services")).sort((a, b) => a.data.order - b.data.order);
 ---
 <section class="mx-auto space-y-8 px-7 py-16 sm:px-6 lg:space-y-16 lg:px-20 w-full bg-[url('/img/oferta-bg.png')] bg-no-repeat" id="oferta">
     <div class="mx-4 flex flex-wrap justify-center p-8 items-center">

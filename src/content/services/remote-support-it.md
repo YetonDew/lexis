@@ -2,6 +2,7 @@
 title: Zdalna obsługa i wdrożenia systemów IT
 description: Pomagamy w planowaniu, konfiguracji i optymalizacji rozwiązań IT, dostosowanych do potrzeb Twojej firmy. Wspieramy w każdym etapie wdrożenia.
 graphic: Remote
+order: 4
 ---
 
 Why do we use it?

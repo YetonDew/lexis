@@ -2,6 +2,7 @@
 title: Doradztwo biznesowe
 description: Pomagamy w tworzeniu strategii rozwoju firmy, optymalizacji procesów, analizie finansowej oraz podejmowaniu kluczowych decyzji. Wspieramy przedsiębiorców na każdym etapie działalności.
 graphic: Business
+order: 2
 ---
 
 Why do we use it?

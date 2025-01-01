@@ -8,6 +8,7 @@ import Map from "../../icons/Map.astro";
 
 export async function getStaticPaths() {
     const services = await getCollection("services");
+    console.log(services);
     return services.map((service) => ({
         params: { id: service?.slug },
         props: { service },
@@ -31,9 +32,6 @@ const { Content } = await service.render();
             >{title}</h1>
             <div class="flex justify-between py-4 mt-10 mx-20">
                 <div class="flex gap-4">
-                    <div class="w-12 h-12 rounded-full overflow-hidden">
-                        <img src="../src/assets/avatar.webp" alt="">
-                    </div>
                     <div class="flex flex-col text-sm ">
                         <p class="font-bold text-primaryDark">Marta Tagowska</p>
                         <p class="text-primaryLight">Właściciel</p>

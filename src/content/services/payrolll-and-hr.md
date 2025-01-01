@@ -2,6 +2,7 @@
 title: Kadry i Płace
 description: Przygotowujemy umowy o pracę, zlecenia i o dzieło, naliczamy wynagrodzenia, sporządzamy listy płac, rozliczamy z ZUS (wraz z przesyłaniem dokumentów elektronicznie) oraz pomagamy w prowadzeniu akt osobowych pracowników.
 graphic: Payroll
+order: 3
 ---
 
 Why do we use it?

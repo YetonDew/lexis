@@ -2,7 +2,7 @@
 title: Usuługi księgowe
 description: Prowadzimy księgi handlowe, przychodów i rozchodów, rozliczenia ryczałtowe oraz deklaracje podatkowe (miesięczne, kwartalne, roczne). Pomagamy również w uporządkowaniu zaległości.
 graphic: Accounting
-
+order: 1
 ---
 
 Why do we use it?
