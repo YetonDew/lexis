@@ -1,15 +1,30 @@
 ---
 import CardService from "../components/CardService.astro";
+import Wrapper from "../components/Wrapper.astro";
 import { getCollection } from "astro:content";
 
-const services = (await getCollection("services")).sort((a, b) => a.data.order - b.data.order);
+const services = (await getCollection("services")).sort(
+    (a, b) => a.data.order - b.data.order,
+);
 ---
-<section class="mx-auto space-y-8 px-7 py-16 sm:px-6 lg:space-y-16 lg:px-20 w-full bg-[url('/img/oferta-bg.png')] bg-no-repeat" id="oferta">
-    <div class="mx-4 flex flex-wrap justify-center p-8 items-center">
-        {services.map(service => (
-            <div class="max-w-[600px] w-full px-4 md:w-1/2 lg:w-1/2">
-                <CardService {...service} />
-            </div>
-        ))}
-    </div>
-</section>
+
+<Wrapper
+    noMargin={true}
+    fullScreen={true}
+    background="bg-[url('/img/oferta-bg.png')] bg-no-repeat"
+>
+    <section
+        class="w-full mx-auto space-y-8 px-7 py-16 sm:px-6 lg:space-y-16 lg:px-20"
+        id="oferta"
+    >
+        <div class="mx-4 flex flex-wrap justify-center px-40 items-center">
+            {
+                services.map((service) => (
+                    <div class="max-w-[600px] w-full px-4 md:w-1/2 lg:w-1/2">
+                        <CardService {...service} />
+                    </div>
+                ))
+            }
+        </div>
+    </section>
+</Wrapper>

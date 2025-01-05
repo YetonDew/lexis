@@ -15,7 +15,9 @@ import { ClientRouter } from "astro:transitions";
 		<ClientRouter />
 	</head>
 	<body>
-		<slot />
+		<main>
+			<slot />
+		</main>
 	</body>
 </html>
 
@@ -34,7 +36,7 @@ import { ClientRouter } from "astro:transitions";
 	}
 	html {
 		font-family: "Asap Variable", system-ui, sans-serif;
-		background: #FAFAFA;
+		background: #fafafa;
 	}
 	,
 	body {
