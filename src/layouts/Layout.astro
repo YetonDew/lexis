@@ -2,6 +2,7 @@
 // Supports weights 100-900
 import "@fontsource-variable/asap";
 import { ClientRouter } from "astro:transitions";
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
@@ -11,7 +12,8 @@ import { ClientRouter } from "astro:transitions";
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/lexisLogo.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Biuro Lexis</title>
+		<meta name="description" content={description || 'Biuro Lexis: Zaufani eksperci finansowi z 25-letnim doświadczeniem, oferujący usługi księgowe, kadrowe, doradztwo biznesowe oraz wsparcie IT. Zlokalizowani w Częstochowie, Polska. Pomagamy rozwijać Twoją firmę efektywnie.'} />
+		<title>{title || 'Biuro Lexis'}</title>
 		<ClientRouter />
 	</head>
 	<body>
