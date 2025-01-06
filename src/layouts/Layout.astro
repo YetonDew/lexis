@@ -2,7 +2,7 @@
 // Supports weights 100-900
 import "@fontsource-variable/asap";
 import { ClientRouter } from "astro:transitions";
-const { title, description } = Astro.props;
+const { title, description, keywords } = Astro.props;
 ---
 
 <!doctype html>
@@ -13,6 +13,8 @@ const { title, description } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/lexisLogo.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={description || 'Biuro Lexis: Zaufani eksperci finansowi z 25-letnim doświadczeniem, oferujący usługi księgowe, kadrowe, doradztwo biznesowe oraz wsparcie IT. Zlokalizowani w Częstochowie, Polska. Pomagamy rozwijać Twoją firmę efektywnie.'} />
+		<meta name="keywords" content={keywords || "biuro rachunkowe czestochowa, usługi księgowe czestochowa, marta rogóż, księga przychodw warszawa, biura, biur rachunowe, pit, cit, częstochowa, rachunkowość, księgowość, podatki, kadry, płace, amortyzacja, środki trwałe, rozliczenia, zus, pit, vat, cit, sprawy pracownicze, biuro rachunkowe warszawa, usługi księgowe częstochowa, rozliczenia podatkowe czestochowa, pit, cit, vat, podatki, biura rachunkowe"} />
+    	<meta name="author" content="www.github.com/YetonDew" />
 		<title>{title || 'Biuro Lexis'}</title>
 		<ClientRouter />
 	</head>
