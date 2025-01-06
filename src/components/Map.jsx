@@ -20,6 +20,7 @@ export default function MapComponent(props) {
         attribution: ATRIBUTION,
         subdomains: "abcd", 
         maxZoom: 19,
+        minZoom: 2
       }).addTo(_ref.current);
 
       const customIconMarker = L.icon({
