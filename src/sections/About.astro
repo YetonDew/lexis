@@ -49,16 +49,21 @@ import Wrapper from "../components/Wrapper.astro";
                         </div>
                     </div>
                 </div>
-
                 <div class="relative inline-block">
                     <span class="block relative">
+                      <picture>
+                        <source srcset="/img/professionalbussiness.webp" type="image/webp" />
+                        <source srcset="/img/professionalbussiness.jpg" type="image/jpeg" />
                         <img
-                            src="/img/professionalbussiness.jpg"
-                            alt="Professional business consultants reviewing documents"
-                            class="w-full h-auto shadow-sm"
+                          src="/img/professionalbussiness.jpg"
+                          alt="Professional business consultants reviewing documents"
+                          class="w-full h-auto shadow-sm"
+                          loading="lazy"
+                          decoding="async"
                         />
+                      </picture>
                     </span>
-                </div>
+                  </div>                  
             </div>
         </div>
     </section>

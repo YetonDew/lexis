@@ -1,24 +1,37 @@
-<div class="relative overflow-hidden w-full h-screen bg-cover bg-center bg-[url('/img/office.png')] mt-[3.8rem]">
-    <section class="w-[700px] h-full flex flex-col justify-center pl-40 items-start ">
-        <h1 class="text-7xl text-white text-wrap font-medium">Twoje finanse w dobrych rękach</h1>
-        <p class="text-1xl text-white mt-10 font-light">Zadbaj o swoje finanse z ekspertami, na których możesz polegać.
-            Oferujemy kompleksowe usługi finansowe.
-        </p>
-        <button>
-            <a
-            href="#oferta"
-            class="group mt-10 inline-flex items-center gap-1 text-1xl font-medium text-white bg-[#2E55A3] py-4 px-7"
+<div class="relative overflow-hidden w-full h-screen mt-[3.8rem]">
+    <picture>
+      <source srcset="/img/office.webp" type="image/webp" />
+      <source srcset="/img/office.jpg" type="image/jpg" />
+      <img
+        src="/img/office.jpg"
+        alt="Biuro – Twoje finanse w dobrych rękach"
+        class="absolute top-0 left-0 w-full h-full object-cover"
+        loading="lazy"
+        decoding="async"
+      />
+    </picture>
+    <section class="absolute inset-0 w-[700px] h-full flex flex-col justify-center pl-40 items-start">
+      <h1 class="text-7xl text-white font-medium">
+        Twoje finanse w dobrych rękach
+      </h1>
+      <p class="text-1xl text-white mt-10 font-light">
+        Zadbaj o swoje finanse z ekspertami, na których możesz polegać.
+        Oferujemy kompleksowe usługi finansowe.
+      </p>
+      <button>
+        <a
+          href="#oferta"
+          class="group mt-10 inline-flex items-center gap-1 text-1xl font-medium text-white bg-[#2E55A3] py-4 px-7"
         >
-            Poznaj naszą ofertę
-    
-            <span
-                aria-hidden="true"
-                class="block transition-all group-hover:ms-0.5 rtl:rotate-180"
-            >
-                &rarr;
-            </span>
+          Poznaj naszą ofertę
+          <span
+            aria-hidden="true"
+            class="block transition-all group-hover:ms-0.5 rtl:rotate-180"
+          >
+            &rarr;
+          </span>
         </a>
-        </button>
-    </section>  
-
-</div>
+      </button>
+    </section>
+  </div>
+  
