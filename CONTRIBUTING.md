@@ -35,7 +35,7 @@ We’re thrilled that you’re interested in contributing to our project! This d
 
 1. **Commit your changes**: Once you’re satisfied with your work, commit your changes with a clear and descriptive message.
 2. **Push to your fork**: Push your branch with the changes to your fork on GitHub using `git push origin <your-branch-name>`.
-3. **Create a Pull Request (PR)**: In GitHub, go to your fork of *La velada del año 4* and click "Pull request" to start one. Clearly describe the changes you’ve made and why they’re necessary or useful for the project.
+3. **Create a Pull Request (PR)**: In GitHub, go to your fork of Lexis and click "Pull request" to start one. Clearly describe the changes you’ve made and why they’re necessary or useful for the project.
 
 ---
 
