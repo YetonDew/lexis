@@ -1,8 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer utilities {
+/* @layer utilities {
   .trapezoid-after::after {
     content: "";
     position: absolute;
@@ -15,4 +13,4 @@
     border-right: 100px solid transparent;
     z-index: -1;
   }
-}
+} */
