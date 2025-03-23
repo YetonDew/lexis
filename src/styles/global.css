@@ -15,4 +15,43 @@
     border-right: 100px solid transparent;
     z-index: -1;
   }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 50;
+    margin-right: 10px;
+  }
+  .hamburger span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: white;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  .hamburger.open span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  .mobile-menu {
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  .mobile-menu.open {
+    transform: translateX(0);
 }
+
+}
+
+

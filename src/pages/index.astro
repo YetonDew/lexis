@@ -4,13 +4,13 @@ import Landing from "../components/Landing.astro";
 import About from "../sections/About.astro";
 import Services from "../sections/Services.astro";
 import Contact from "../sections/Contact.astro";
-import NavHeader from "../components/NavHeader.astro";
+import NavHeader from "../components/NavHeader";
 import Footer from "../components/Footer.astro";
 ---
 <link rel="preload" href="/img/office.webp" as="image">
 
 <Layout title="Biuro Lexis">
-  <NavHeader />
+  <NavHeader client:only="react" />
     <Landing />
     <About />
     <Services />
