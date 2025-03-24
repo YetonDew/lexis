@@ -12,7 +12,7 @@ import Wrapper from "../components/Wrapper.astro";
         id="kontakt"
     >
         <div
-            class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-center"
+            class="grid lg:grid-cols-2 gap-8 items-center justify-center"
         >
             <div class="flex flex-col items-start">
                 <h1 class="text-3xl mb-6 ml-4 font-medium text-primaryDark">
@@ -65,7 +65,7 @@ import Wrapper from "../components/Wrapper.astro";
                 </ul>
             </div>
 
-            <div class="w-full h-full">
+            <div class="w-full h-full min-h-[300px] relative inline-block">
                 <Maps
                     client:only="react"
                     lat={50.81527837448133}
