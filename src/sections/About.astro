@@ -1,5 +1,6 @@
 ---
 import Wrapper from "../components/Wrapper.astro";
+import Counter from "../components/Counter.jsx";
 ---
 
 <Wrapper>
@@ -11,74 +12,46 @@ import Wrapper from "../components/Wrapper.astro";
             <div class="grid lg:grid-cols-2 gap-x-12 gap-y-36 items-center">
                 <div class="space-y-8">
                     <div class="space-y-4">
-                        <h2
-                            class="text-4xl md:text-4xl font-bold text-primaryLight leading-tight"
-                        >
-                            Zadbamy o Twoje finanse, abyś mógł skupić się na
-                            rozwoju!
+                        <h2 class="text-4xl md:text-4xl font-bold text-primaryLight leading-tight">
+                            Zadbamy o Twoje finanse, abyś mógł skupić się na rozwoju!
                         </h2>
                         <p class="text-sm text-gray-600 leading-relaxed prose">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pargliatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                     </div>
 
-                    <div
-                        class="flex items-center justify-between divide-x divide-gray-300 text-center w-full max-w-screen-lg mx-auto"
-                    >
+                    <div class="flex items-center justify-between divide-x divide-gray-300 text-center w-full max-w-screen-lg mx-auto">
                         <div class="flex-1 px-4">
-                            <p class="text-4xl font-bold text-blue-500">
-                                25 lat
-                            </p>
+                            <Counter client:visible="react" start={0} end={25} duration={3600} string=""/>
                             <p class="text-sm text-gray-700 font-medium">Doświadczenia</p>
                         </div>
                         <div class="flex-1 px-4">
-                            <p class="text-4xl font-bold text-blue-500">50+</p>
+                            <Counter client:visible="react" start={0} end={70} duration={3000} string="+"/>
                             <p class="text-sm text-gray-700 font-medium">Klientów</p>
                         </div>
                         <div class="flex-1 px-4">
-                            <p class="text-4xl font-bold text-blue-500">75+</p>
+                            <Counter client:visible="react" start={0} end={100} duration={2500} string="+"/>
                             <p class="text-sm text-gray-700 font-medium">Zleceń</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="relative inline-block">
                     <span class="block relative">
-                      <picture>
-                        <source srcset="/img/professionalbussiness.webp" type="image/webp" />
-                        <source srcset="/img/professionalbussiness.jpg" type="image/jpeg" />
-                        <img
-                          src="/img/professionalbussiness.jpg"
-                          alt="Professional business consultants reviewing documents"
-                          class="w-full h-auto shadow-sm"
-                          loading="lazy"
-                          decoding="async"
-                        />
-                      </picture>
+                        <picture>
+                            <source srcset="/img/professionalbussiness.webp" type="image/webp" />
+                            <source srcset="/img/professionalbussiness.jpg" type="image/jpeg" />
+                            <img
+                                src="/img/professionalbussiness.jpg"
+                                alt="Professional business consultants reviewing documents"
+                                class="w-full h-auto shadow-sm"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </picture>
                     </span>
-                  </div>                  
+                </div>                  
             </div>
         </div>
     </section>
 </Wrapper>
-
-<style>
-    .relative span::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 80%;
-        height: 80%;
-        background-color: #041056;
-        transform: translateX(2.25rem) translateY(-2.25rem);
-        z-index: -10;
-    }
-</style>
